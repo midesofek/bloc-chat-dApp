@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decentralized Chat</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <script src="./nodejs-example-dApp/scripts/streamDemo.js"></script> -->
+    <script src="https://unpkg.com/streamr-client@latest/streamr-client.web.js"></script>
+    <script
+      defer
+      src="https://cdn.ethers.io/lib/ethers-5.7.2.umd.min.js"
+      type="application/javascript"
+    ></script>
+  </head>
+  <body>
+    <button id="connect-wallet" onclick="connectWallet()">
+      Connect Wallet
+    </button>
+    <h1>Decentralized Chat</h1>
+
+    <div id="message--window"></div>
+    <br />
+
+    <input type="text" id="message--input" placeholder="Type your message" />
+    <button id="submit--button" onclick="sendMessage()">Send Message</button>
+    <!-- <script src="./nodejs-example-dApp/scripts/streamDemo.js"></script> -->
+    <script src="./streamrChat.js"></script>
+  </body>
+</html>
